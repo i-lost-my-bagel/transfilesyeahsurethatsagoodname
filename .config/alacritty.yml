@@ -1,0 +1,42 @@
+#Alacritty Config
+
+
+window:
+  padding: 
+    x: 24
+    y: 24
+      #dynamic_padding: true
+  opacity: 0.75
+
+font:
+  normal:
+    family: Cascadia Code PL
+  size: 10.0
+  # glyph_offset:
+  #   y: 3
+
+colors:    #Trans Terminal Colors
+  primary:
+    background: '#000000'
+
+  normal:
+    black:    '#000000'
+    red:      '#5bcefa'
+    green:    '#51b9df'
+    yellow:   '#48a4c6'
+    blue:     '#f5a9b8'
+    magenta:  '#f5a9b8'
+    cyan:     '#f5f5f5'
+    white:    '#dadada'
+
+
+  bright:
+    black:    '#000000'
+    red:      '#55b4ce'
+    green:    '#4d88b0'
+    yellow:   '#3c6b95'
+    blue:     '#c28692'
+    magenta:  '#f598a6'
+    cyan:     '#dedede'
+    white:    '#ffffff'
+
