@@ -1,0 +1,76 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+;colors
+
+[bar/testbar]
+
+fixed-center = true
+
+width = 100%
+height = 50
+border-left-size = 10
+border-color = #00000000
+border-right-size = 10
+border-top-size = 10
+background = #00000000
+
+modules-left = date
+
+font-0 = "Iosevka Nerd Font:pixelsize=10;3"
+font-1 = "Iosevka Nerd Font:style=Medium:size=22;5"
+
+
+[bar/testbar2]
+
+fixed-center = true
+
+width = 200
+height = 50
+offset-x = 400
+border-left-size = 10
+border-color = #00000000
+border-right-size = 10
+border-top-size = 10
+background = #333
+
+modules-left = date
+
+font-0 = "Iosevka Nerd Font:pixelsize=10;3"
+font-1 = "Iosevka Nerd Font:style=Medium:size=22;5"
+
+
+
+
+[module/date]
+type = internal/date
+interval = 5
+format-background = #f5a9b8
+label-height = 20
+
+date =
+date-alt = "%Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = #444444
+format-underline = #0a6cf5
+
+label = %date% %time%
